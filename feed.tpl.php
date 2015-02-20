@@ -10,11 +10,11 @@ xmlns:atom="http://www.w3.org/2005/Atom"
 xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
 xmlns:slash="http://purl.org/rss/1.0/modules/slash/" >
   <channel>
-    <title>Postqueue Name</title>
-    <link>Startseite?</link>
-   <!--  <description>Postqueue Name</description> -->
-    <language>de-DE</language>
-    <lastBuildDate>Fri, 13 Feb 2015 06:01:17 +0000</lastBuildDate>
+    <title><?php echo $queue_name; ?></title>
+    <link><?php echo get_home_url(); ?></link>
+   <description>Posts in <?php echo $queue_name; ?></description>
+    <language><?php echo get_locale(); ?></language>
+   <!--  <lastBuildDate>Fri, 13 Feb 2015 06:01:17 +0000</lastBuildDate> -->
     <generator>http://wordpress.org/plugins/ph-postqueue-fees/?v=1.0</generator>
     <?php 
     foreach ($posts as $post) { 
